@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia</title>
+    <link rel="shortcut icon" href="assets/images/BG2.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body style="background-image: url('assets/images/BG2.jpg');">
+
+    <div id="startContainer" class="container-fluid text-center">
+        <div class="col-12 mt-2 text-center">
+            <button id="startbtn">
+                <h2>START</h2>
+            </button>
+        </div>
+    </div>
+
+    <div id="questionContainer" class="container-fluid" style="color: orange;">
+        <div class="col-12 mt-2 text-center" "bg-warning text-dark">
+            <h1>TRIVIA GAME</h1>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-2"></div>
+            <div class="col-8 mt-2 bg-warning text-dark">
+
+                <div id="timeRemaining" class="col-12 text-center mt-2 mb-4">
+                    <h3>Time Remaining</h3>
+                    <div id="display">00:00</div>
+                </div>
+
+                <div id="Q1" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques1?
+                        </b>
+
+                        <form id="form1">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1 </input>
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+
+                <div id="Q2" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques2?
+                        </b>
+
+                        <form id="form2">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div id="Q3" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques3?
+                        </b>
+
+                        <form id="form3">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div id="Q4" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques4?
+                        </b>
+
+                        <form id="form4">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div id="Q5" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques5?
+                        </b>
+
+                        <form id="form5">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div id="Q6" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques6?
+                        </b>
+
+                        <form id="form6">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div id="Q7" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques7?
+                        </b>
+
+                        <form id="form7">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div id="Q8" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques8?
+                        </b>
+
+                        <form id="form8">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div id="Q9" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques9?
+                        </b>
+
+                        <form id="form9">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div id="Q10" class="col-12 mt-2 text-center">
+                    <p>
+                        <b>
+                            Ques10?
+                        </b>
+
+                        <form id="form10">
+                            <input class="radio-inline" type="radio" name="optradio">Option 1
+                            <input class="radio-inline" type="radio" name="optradio">Option 2
+                            <input class="radio-inline" type="radio" name="optradio">Option 3
+                            <input class="radio-inline" type="radio" name="optradio">Option 4
+                        </form>
+                    </p>
+                </div>
+
+                <div class="col-12 mt-2 text-center">
+                    <button id="doneBtn">
+                        <h4>DONE</h4>
+                    </button>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div id="resultContainer" class="container-fluid text-center">
+        <h1>All Done !</h1>
+        <p id="correctAnswer"></p>
+        <p id="incorrectAnswer"></p>
+        <p id="unAnswered"></p>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
